@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmAI - Smart Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.css">
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <!-- Add this at the top of body -->
+    <a href="index.html" class="home-link">
+        <i class="fas fa-home"></i>
+    </a>
+    
+    <div class="dashboard-container">
+        <!-- AI Analytics Section -->
+        <section class="dashboard-section analytics">
+            <h2><i class="fas fa-brain"></i> AI Analytics</h2>
+            <div class="card-grid">
+                <div class="card yield-prediction">
+                    <h3>Yield Prediction</h3>
+                    <canvas id="yieldChart"></canvas>
+                    <div id="yieldMetrics" class="metrics"></div>
+                </div>
+                <div class="card disease-detection">
+                    <h3>Disease Detection</h3>
+                    <div id="diseaseStatus" class="status-display"></div>
+                    <div id="preventiveMeasures"></div>
+                </div>
+                <div class="card growth-tracking">
+                    <h3>Growth Prediction</h3>
+                    <canvas id="growthChart"></canvas>
+                    <div id="growthMetrics" class="metrics"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Smart Irrigation Section -->
+        <section class="dashboard-section irrigation">
+            <h2><i class="fas fa-tint"></i> Smart Irrigation</h2>
+            <div class="card-grid">
+                <div class="card moisture-levels">
+                    <h3>Soil Moisture</h3>
+                    <canvas id="moistureChart"></canvas>
+                    <div id="moistureAlerts" class="alerts"></div>
+                </div>
+                <div class="card weather">
+                    <h3>Weather Forecast</h3>
+                    <div id="weatherWidget"></div>
+                </div>
+                <div class="card water-usage">
+                    <h3>Water Analytics</h3>
+                    <canvas id="waterUsageChart"></canvas>
+                    <div id="waterEfficiency" class="metrics"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Market Intelligence Section -->
+        <section class="dashboard-section market">
+            <h2><i class="fas fa-chart-line"></i> Market Intelligence</h2>
+            <div class="card-grid">
+                <div class="card price-trends">
+                    <h3>Price Trends</h3>
+                    <canvas id="priceChart"></canvas>
+                    <div id="priceAnalysis"></div>
+                </div>
+                <div class="card demand">
+                    <h3>Demand Analysis</h3>
+                    <canvas id="demandChart"></canvas>
+                    <div id="demandInsights"></div>
+                </div>
+                <div class="card export">
+                    <h3>Export Opportunities</h3>
+                    <div id="exportMarkets"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sustainability Section -->
+        <section class="dashboard-section sustainability">
+            <h2><i class="fas fa-leaf"></i> Sustainability Tracker</h2>
+            <div class="card-grid">
+                <div class="card carbon">
+                    <h3>Carbon Footprint</h3>
+                    <canvas id="carbonChart"></canvas>
+                    <div id="carbonMetrics"></div>
+                </div>
+                <div class="card efficiency">
+                    <h3>Resource Efficiency</h3>
+                    <div id="efficiencyMetrics"></div>
+                </div>
+                <div class="card certification">
+                    <h3>Eco-Certification</h3>
+                    <div id="certificationStatus"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/dashboard-analytics.js"></script>
+    <script src="js/smart-irrigation.js"></script>
+    <script src="js/market-intelligence.js"></script>
+    <script src="js/sustainability-tracker.js"></script>
+</body>
+</html>
